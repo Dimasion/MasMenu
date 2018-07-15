@@ -6,7 +6,7 @@
 ### Installation
 Add library to your project from dist folder:
 ```sh
-<script src="scripts/masmenu.min.js">
+<script src="scripts/masmenu.min.js"></script>
 ```
 
 ### Usage
