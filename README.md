@@ -10,8 +10,22 @@ Add library to your project from dist folder:
 ```
 
 ### Usage
+
+HTML:
 ```sh
-  new MasMenu(options)
+  <nav class="menu js-menu">
+    <a href="#" class="menu-item">Home</a>
+    <a href="#" class="menu-item">Works</a>
+    <a href="#" class="menu-item">About</a>
+    <a href="#" class="menu-item">Contacts</a>
+  </nav>
+```
+
+Javascript:
+```sh
+  new MasMenu({
+    el: '.js-menu' (selector or DOM node)
+  })
 ```
 ### Options
 ```sh
