@@ -1,0 +1,108 @@
+:root {
+  --font-family: 'Oswald', sans-serif;
+  --base-font-size: 16px;
+  --color-primary: #1A535C;
+  --color-secondary: #4ECDC4;
+  --color-background: #F7FFF7;
+  --transition: .5s;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------------------*/
+/* Menu */
+/* --------------------------*/
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.menu-item {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 3em;
+  margin-right: 1em;
+  letter-spacing: 0.05em;
+  overflow: hidden;
+  transition: color var(--transition);
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-item:before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  transition: width 0s ease;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.menu-item:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: var(--color-primary);
+  transition: width .5s ease, background .5s;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.menu-item:hover {
+  color: var(--color-secondary);
+}
+.menu-item:hover:before {
+  width: 100%;
+  background: var(--color-secondary);
+  transition: width .5s ease;
+}
+
+.menu-item:hover:after {
+  width: 100%;
+  background: var(--color-secondary);
+  opacity: 0;
+  transition: width 0s ease;
+}
+
+/* Modifiers */
+.menu--dark {
+  background-color: var(--color-primary);
+}
+.menu--dark .menu-item {
+  color: var(--color-background);
+}
+.menu--dark .menu-item:hover {
+  color: var(--color-background);
+}
+.menu--dark .menu-item:after {
+  background: var(--color-background);
+}
+.menu--dark .menu-item:hover:before {
+  background: var(--color-background);
+}
+
+/* --------------------------*/
+/* Resposive */
+/* --------------------------*/
+@media screen and (max-width: 900px) {
+  .menu {
+    flex-direction: column;
+  }
+  .menu-item {
+    margin-right: 0;
+  }
+}

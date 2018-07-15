@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Menu animation</title>
+</head>
+<body>
+  <nav class="menu js-menu">
+    <a href="#" class="menu-item">Home</a>
+    <a href="#" class="menu-item">Works</a>
+    <a href="#" class="menu-item">About</a>
+    <a href="#" class="menu-item">Contacts</a>
+  </nav>
+  <nav class="menu menu--dark js-menu-2">
+    <a href="#" class="menu-item">Home</a>
+    <a href="#" class="menu-item">Works</a>
+    <a href="#" class="menu-item">About</a>
+    <a href="#" class="menu-item">Contacts</a>
+  </nav>
+  <!-- <script src="./index.js"></script> -->
+  <script src="./dist/masmenu.min.js"></script>
+  <script>
+    new MasMenu({
+      el: '.js-menu',
+      randomMode: false,
+      speedPerLetterMs: 100
+    })
+    new MasMenu({
+      el: '.js-menu-2',
+      randomMode: true,
+      speedPerLetterMs: 200
+    })
+  </script>
+</body>
+</html>
