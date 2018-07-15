@@ -17,4 +17,7 @@ Add library to your project from dist folder:
 }
 ```
 
+> Inspired by [Beauborg]
+
 [DEMO]: <https://elegant-kepler-38ee75.netlify.com/>
+[Beaugorg]: <https://beaubourg.paris/en>
