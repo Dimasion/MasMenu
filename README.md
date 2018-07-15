@@ -13,11 +13,11 @@ Add library to your project from dist folder:
 
 HTML:
 ```sh
-  <nav class="menu js-menu">
-    <a href="#" class="menu-item">Home</a>
-    <a href="#" class="menu-item">Works</a>
-    <a href="#" class="menu-item">About</a>
-    <a href="#" class="menu-item">Contacts</a>
+  <nav class="js-menu">
+    <a href="#">Home</a>
+    <a href="#">Works</a>
+    <a href="#">About</a>
+    <a href="#">Contacts</a>
   </nav>
 ```
 
