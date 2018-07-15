@@ -1,4 +1,6 @@
-[DEMO]
+### Demo
+> [See here]
+
 ### Installation
 Add library to your project from dist folder:
 ```sh
@@ -19,5 +21,5 @@ Add library to your project from dist folder:
 
 > Inspired by [Beauborg]
 
-[DEMO]: <https://elegant-kepler-38ee75.netlify.com/>
+[See here]: <https://elegant-kepler-38ee75.netlify.com/>
 [Beauborg]: <https://beaubourg.paris/en>
