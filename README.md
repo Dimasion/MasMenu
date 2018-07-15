@@ -5,14 +5,14 @@
 
 ### Installation
 Add library to your project from dist folder:
-```sh
+```html
 <script src="scripts/masmenu.min.js"></script>
 ```
 
 ### Usage
 
 HTML:
-```sh
+```html
   <nav class="js-menu">
     <a href="#">Home</a>
     <a href="#">Works</a>
@@ -22,16 +22,16 @@ HTML:
 ```
 
 Javascript:
-```sh
+```javascript
   new MasMenu({
-    el: '.js-menu' (selector or DOM node)
+    el: '.js-menu' // selector or DOM node
   })
 ```
 ### Options
-```sh
+```javascript
 {
-  speedPerLetterMs: <Number; Default: 100;>
-  randomMode: <Boolean; Default: false;>
+  speedPerLetterMs: <Number> Default: 100
+  randomMode: <Boolean> Default: false
 }
 ```
 
