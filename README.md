@@ -1,3 +1,4 @@
+[DEMO]
 ### Installation
 Add library to your project from dist folder:
 ```sh
@@ -15,3 +16,5 @@ Add library to your project from dist folder:
   randomMode: <Boolean; Default: false;>
 }
 ```
+
+[DEMO]: <https://elegant-kepler-38ee75.netlify.com/>
